@@ -83,25 +83,3 @@ flowchart LR
 ```
 
 当前遥测和告警为可复现的模拟数据，中文知识检索使用关键词相关度排序，尚未接入 MQTT、向量检索、用户认证或真实设备控制。设备控制等有副作用的操作不开放。
-
-## 面试演示
-
-1. 打开总览，查看设备、告警和趋势。
-2. 在 AI 助手中询问“分析 GW-204 网关关联设备离线原因”。
-3. 检查回答中的事实、推断、排查步骤和运维手册来源。
-4. 在运维知识库导入 [`examples/runbooks/冷链温度异常处置.md`](examples/runbooks/冷链温度异常处置.md)，询问冷链温度异常的排查方法并观察引用。
-5. 更新告警状态后刷新页面，确认状态和审计记录仍保留。
-
-## 上传到 GitHub
-
-先在 GitHub 创建一个空仓库，然后在项目根目录执行：
-
-```bash
-git add .
-git status
-git commit -m "Initial IoTa Ops Copilot MVP"
-git remote add origin https://github.com/<your-account>/<your-repository>.git
-git push -u origin main
-```
-
-确认 `git status` 没有 `.env`、`.venv/` 或 `data/` 下的本地数据库和上传文档。公开仓库前，请自行选择并添加适合的开源许可证。
