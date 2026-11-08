@@ -4,6 +4,22 @@
 
 > 当前是可运行的本地 MVP：设备和告警使用模拟数据；SQLite 持久化告警、诊断、审计和知识库。服务端可调用 DeepSeek 等 OpenAI 兼容模型，未配置密钥时使用明确标记的本地演示诊断。项目不会控制真实设备。
 
+## 项目预览
+
+![IoTa Ops 页面操作预览](assets/screenshots/project-tour.gif)
+
+以下截图来自本地运行的项目界面。设备遥测和告警为模拟数据；配置 DeepSeek 后，诊断由真实模型生成。
+
+| 运维总览 | 设备管理 |
+| --- | --- |
+| ![运维总览](assets/screenshots/overview.png) | ![设备管理](assets/screenshots/devices.png) |
+
+| 告警中心 | 运维知识库 |
+| --- | --- |
+| ![告警中心](assets/screenshots/alerts.png) | ![运维知识库](assets/screenshots/knowledge-base.png) |
+
+![AI 运维助手](assets/screenshots/assistant.png)
+
 ## 功能
 
 - 运维总览：在线率、告警、网关状态和设备趋势。
